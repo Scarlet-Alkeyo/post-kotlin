@@ -31,17 +31,26 @@ class MainActivity : AppCompatActivity() {
         displayInfo()
     }
     fun displayInfo(){
-//        val  contact1 =Contact("Abram","0786752345","@abram.com","")
-        val Info1=Info()
+//
+        val  article= Post("Jane Juma","","Science","1 June 2024","Science is interesting...","","Read more")
+        val  article2= Post("Agnes Wambui","","Technology","24 June 2024","Tech increase innovation ...","","Read more")
+        val  article3= Post("Alice Wahome","","Plants","24 June 2024","Plants provide food...","","Read more")
+        val  article4= Post("James Gitau","","Religion","24 June 2024","Religion makes us close to God ...","","Read more")
+        val  article5= Post("Scarlet Alkeyo","","Education","24 June 2024","Education is the best thing ...","","Read more")
+        val  article6= Post("Wilson Mundia","","Accounting","2 June 2024","Mathematics is needed in accounting ...","","Read more")
+        val  article7= Post("Alice  Auma","","Bussiness","1 June 2024","Work in your bussiness ...","","Read more")
+        val  article8= Post("Ann Alkeyo","","Health","23 June 2024","Good health is the best thing ...","","Read more")
+
+
+         var   articleList= listOf(article,article2,article3,article4,article5,article5,article6,article7,article8)
+        val  PostAdapter =PostAdapter(articleList)
+        binding.rvPost.adapter = PostAdapter
 
 
 
 
 
-
-//        val contactList = listOf(Info1,contact2,contact3,contact4,contact5,contact6,contact7,contact8)
-//        val contactAdapter= ContactAdapter(contactList)
-//        binding.rvContacts.adapter=contactAdapter
+//
 
     }
 }
